@@ -14,7 +14,7 @@
 
 ### Hbase数据模型
 
- - RowKey：决定一行记录的唯一标识，Hbase只支持三种查询方式（`*基于RowKey的单行查询*`、`*基于RowKey的范围查询*`、`*全表查询*`），RowKey是按照字典排序的，最多只能存储64k的字节数据
+ - RowKey：决定一行记录的唯一标识，Hbase只支持三种查询方式（**`基于RowKey的单行查询`**、**`基于RowKey的范围查询`**、**`全表查询`**），RowKey是按照字典排序的，最多只能存储64k的字节数据
 
  - Column Family & qualifier：HBase表中每个列（qualifier）都属于某个列族，必须在使用表之前定义。 列名都以列族作为前缀，例如 courses:history、courses:math 都属于 courses 这个列族
 
