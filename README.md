@@ -21,3 +21,7 @@
  - TimeStamp：Hbase中使用不同的timestame来标识相同rowkey行对应的不同版本的数据。在写入数据时如果用户没有指定对应的timestamp，系统会自动添加一个与系统时间相同的timestamp。相同rowkey的数据按照timestamp倒序排列，默认查询的是最新的版本
 
  - cell：Cell 是由 {row key，column(=< family> + < qualifier>)，version} 唯一确定的单元。Cell 中的数据是没有类型的，全部是字节码形式存储 
+
+ ### Hbase与传统关系型数据库对比
+
+ ![对比](image/hbasevs.png)
