@@ -25,3 +25,46 @@
  ### Hbase与传统关系型数据库对比
 
  ![对比](image/hbasevs.png)
+
+ ## Hbase安装
+
+ ### 下载解压安装包：http://archive.cloudera.com/cdh5/cdh/5/hbase-1.2.0-cdh5.7.0.tar.gz
+ ### 修改配置文件
+ - hbase-env.sh
+ ```bash
+ export JAVA_HOME=$JAVA_HOME  
+ #默认使用hbase自带的zookeeper  
+ export HBASE_MANAGES_ZK=true  
+ # Configure PermSize. Only needed in JDK7. You can safely remove it for JDK8+  
+ # JDK8需加注释
+export HBASE_MASTER_OPTS="$HBASE_MASTER_OPTS -XX:PermSize=128m -XX:MaxPermSize=128m"
+export HBASE_REGIONSERVER_OPTS="$HBASE_REGIONSERVER_OPTS -XX:PermSize=128m -XX:MaxPermSize=128m"
+```
+
+- hbase-site.xml
+
+|name|value|description|
+|---|---|---|
+|hbase.rootdir|hdfs://localhost:9000/hbase|regionserver的共享目录，用来持久化Hbase|
+|hbase.zookeeper.property.dataDir|/Users/liufukang/app/hbase-1.2.0-cdh5.7.0/zookeeper|快照的存储位置|
+|hbase.cluster.distributed|true|是否以分布式模式运行|
+|hbase.zookeeper.quorm|localhost|zookeeper集群的地址列表|
+
+- regionservers
+> regionserver的地址
+
+### 启动
+`start-hbase.sh`
+
+## Hbase基础架构
+- 印象笔记已整理，TODO
+
+## Hbase读写流程
+- TODO
+
+## Hbase实战
+### Hbase Java API
+- 开发HBase数据库操作类
+
+- 通过多种过滤器过滤数据，实现HBase高级查询
+
