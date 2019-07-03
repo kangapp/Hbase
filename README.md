@@ -64,9 +64,9 @@ export HBASE_REGIONSERVER_OPTS="$HBASE_REGIONSERVER_OPTS -XX:PermSize=128m -XX:M
 
 ## Hbase实战
 ### Hbase Java API
-- 开发HBase数据库操作类
+- [开发HBase数据库操作类](https://github.com/kangapp/Hbase/blob/master/HBase/src/main/java/com/hbase/HBaseUtil.java)
 
-- 通过多种过滤器过滤数据，实现HBase高级查询
+- [通过多种过滤器过滤数据，实现HBase高级查询](https://github.com/kangapp/Hbase/blob/master/HBase/src/test/java/com/test/HBaseFilterTest.java)
     - 基于行的过滤器
     > PrefixFilter：行的前缀匹配  
     > PageFilter：基于行的分页
