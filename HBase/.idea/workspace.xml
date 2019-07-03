@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/test/HBaseUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+            <state relative-caret-position="164">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#145#146#0" expanded="true" />
@@ -64,6 +64,18 @@
                 <element signature="e#1773#1774#0" expanded="true" />
                 <element signature="e#1850#1851#0" expanded="true" />
                 <element signature="e#1874#1875#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/test/HBaseFilterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,6 +100,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hbase/HBaseConn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hbase/HBaseUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/test/HBaseUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/test/HBaseFilterTest.java" />
       </list>
     </option>
   </component>
@@ -154,6 +167,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HBase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -161,11 +182,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -179,8 +206,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HBaseUtilTest.deleteTable">
-    <configuration name="HBaseUtilTest.addFileDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HBaseFilterTest.columnPrefixFilterTest">
+    <configuration name="HBaseFilterTest.addFileDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HBase" />
       <extension name="coverage">
         <pattern>
@@ -189,14 +216,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.HBaseUtilTest" />
+      <option name="MAIN_CLASS_NAME" value="com.test.HBaseFilterTest" />
       <option name="METHOD_NAME" value="addFileDetails" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HBaseUtilTest.deleteRow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HBaseFilterTest.columnPrefixFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HBase" />
       <extension name="coverage">
         <pattern>
@@ -205,14 +232,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.HBaseUtilTest" />
-      <option name="METHOD_NAME" value="deleteRow" />
+      <option name="MAIN_CLASS_NAME" value="com.test.HBaseFilterTest" />
+      <option name="METHOD_NAME" value="columnPrefixFilterTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HBaseUtilTest.deleteTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HBaseFilterTest.keyOnlyFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HBase" />
       <extension name="coverage">
         <pattern>
@@ -221,14 +248,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.HBaseUtilTest" />
-      <option name="METHOD_NAME" value="deleteTable" />
+      <option name="MAIN_CLASS_NAME" value="com.test.HBaseFilterTest" />
+      <option name="METHOD_NAME" value="keyOnlyFilterTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HBaseUtilTest.getFileDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HBaseFilterTest.prefixFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HBase" />
       <extension name="coverage">
         <pattern>
@@ -237,14 +264,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.HBaseUtilTest" />
-      <option name="METHOD_NAME" value="getFileDetails" />
+      <option name="MAIN_CLASS_NAME" value="com.test.HBaseFilterTest" />
+      <option name="METHOD_NAME" value="prefixFilterTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HBaseUtilTest.scanFileDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HBaseFilterTest.rowFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HBase" />
       <extension name="coverage">
         <pattern>
@@ -253,8 +280,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.HBaseUtilTest" />
-      <option name="METHOD_NAME" value="scanFileDetails" />
+      <option name="MAIN_CLASS_NAME" value="com.test.HBaseFilterTest" />
+      <option name="METHOD_NAME" value="rowFilterTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -262,11 +289,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HBaseUtilTest.deleteTable" />
-        <item itemvalue="JUnit.HBaseUtilTest.getFileDetails" />
-        <item itemvalue="JUnit.HBaseUtilTest.scanFileDetails" />
-        <item itemvalue="JUnit.HBaseUtilTest.deleteRow" />
-        <item itemvalue="JUnit.HBaseUtilTest.addFileDetails" />
+        <item itemvalue="JUnit.HBaseFilterTest.columnPrefixFilterTest" />
+        <item itemvalue="JUnit.HBaseFilterTest.keyOnlyFilterTest" />
+        <item itemvalue="JUnit.HBaseFilterTest.prefixFilterTest" />
+        <item itemvalue="JUnit.HBaseFilterTest.rowFilterTest" />
+        <item itemvalue="JUnit.HBaseFilterTest.addFileDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -280,29 +307,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562139633850</updated>
-      <workItem from="1562139636691" duration="5277000" />
+      <workItem from="1562139636691" duration="6771000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HBaseUtilTest_createTable - 2019.07.03 at 16h 46m 38s.xml">
-      <configuration name="HBaseUtilTest.createTable" configurationId="JUnit" />
+    <history-entry file="HBaseFilterTest_createTable - 2019.07.03 at 22h 56m 02s.xml">
+      <configuration name="HBaseFilterTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HBaseUtilTest_addFileDetails - 2019.07.03 at 16h 50m 30s.xml">
-      <configuration name="HBaseUtilTest.addFileDetails" configurationId="JUnit" />
+    <history-entry file="HBaseFilterTest_createTable - 2019.07.03 at 22h 58m 06s.xml">
+      <configuration name="HBaseFilterTest.createTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HBaseUtilTest_getFileDetails - 2019.07.03 at 18h 27m 35s.xml">
-      <configuration name="HBaseUtilTest.getFileDetails" configurationId="JUnit" />
+    <history-entry file="HBaseFilterTest_addFileDetails - 2019.07.03 at 22h 58m 12s.xml">
+      <configuration name="HBaseFilterTest.addFileDetails" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HBaseUtilTest_getFileDetails - 2019.07.03 at 18h 35m 41s.xml">
-      <configuration name="HBaseUtilTest.getFileDetails" configurationId="JUnit" />
+    <history-entry file="HBaseUtilTest_deleteTable - 2019.07.03 at 23h 04m 23s.xml">
+      <configuration name="HBaseUtilTest.deleteTable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HBaseUtilTest_getFileDetails - 2019.07.03 at 18h 38m 52s.xml">
-      <configuration name="HBaseUtilTest.getFileDetails" configurationId="JUnit" />
+    <history-entry file="HBaseFilterTest_createTable - 2019.07.03 at 23h 04m 37s.xml">
+      <configuration name="HBaseFilterTest.createTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HBaseFilterTest_addFileDetails - 2019.07.03 at 23h 05m 01s.xml">
+      <configuration name="HBaseFilterTest.addFileDetails" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HBaseFilterTest_rowFilterTest - 2019.07.03 at 23h 05m 12s.xml">
+      <configuration name="HBaseFilterTest.rowFilterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HBaseFilterTest_prefixFilterTest - 2019.07.03 at 23h 06m 42s.xml">
+      <configuration name="HBaseFilterTest.prefixFilterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HBaseFilterTest_keyOnlyFilterTest - 2019.07.03 at 23h 07m 57s.xml">
+      <configuration name="HBaseFilterTest.keyOnlyFilterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HBaseFilterTest_columnPrefixFilterTest - 2019.07.03 at 23h 11m 06s.xml">
+      <configuration name="HBaseFilterTest.columnPrefixFilterTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5277000" />
+    <option name="totallyTimeSpent" value="6771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -382,8 +424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/test/HBaseUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+        <state relative-caret-position="164">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#145#146#0" expanded="true" />
@@ -392,6 +434,16 @@
             <element signature="e#1773#1774#0" expanded="true" />
             <element signature="e#1850#1851#0" expanded="true" />
             <element signature="e#1874#1875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/HBaseFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

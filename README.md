@@ -67,4 +67,18 @@ export HBASE_REGIONSERVER_OPTS="$HBASE_REGIONSERVER_OPTS -XX:PermSize=128m -XX:M
 - 开发HBase数据库操作类
 
 - 通过多种过滤器过滤数据，实现HBase高级查询
-
+    - 基于行的过滤器
+    > PrefixFilter：行的前缀匹配  
+    > PageFilter：基于行的分页
+    - 基于列的过滤器
+    > ColumnPrefixFilter：列前缀匹配  
+    > FirstKeyOnlyFilter：只返回每一行的第一列
+    - 基于单元值得过滤器
+    > KeyOnlyFilter：返回的数据不包括单元值，只返回行键和列  
+    > TimestampsFilter：根据数据的时间戳版本进行过滤
+    - 基于列和单元值的过滤器
+    > SingleColumnValueFilter：对该列的单元值进行比较过滤
+    > SingleColumnValueExcludeFilter：对该列的单元值进行比较过滤
+    - 比较过滤器
+    > 比较过滤器通常需要一个比较运算符以及一个比较器来实现过滤  
+    > RowFilter、FamilyFilter、QualifierFilter、ValueFilter
